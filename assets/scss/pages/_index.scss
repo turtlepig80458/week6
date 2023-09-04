@@ -1,0 +1,16 @@
+.logo{
+    width: 53px;
+    @include mobile {
+      width: 40px;
+  }
+}
+
+.h-55{
+  height: 55px;
+}
+.form-control{
+padding: 1rem 1.5rem;
+border: 2px solid $primary;
+background-color: transparent;
+}
+

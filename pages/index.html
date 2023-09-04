@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week6</title>
+    <!-- icon  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <%- include('./layout/header'); -%> -->
+
+    <nav>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a class="d-flex align-items-center" href="#">
+            <img class="logo pe-5" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo">
+            <p class="fs-4">7TAO </p>
+            <p class="fs-8 noto-tc-serif">活動訂票網</p>
+          </a>
+
+          <form class="d-flex h-55">
+            <input class="form-control " type="search" placeholder="探索活動" aria-label="Search">
+            <button class="btn btn-primary" type="submit">
+              <span class="material-icons text-warning align-middle">
+                search
+                </span>
+            </button>
+          </form>
+
+          <div class="user d-flex">
+            <a class="d-flex px-7" href="#">
+              <span class="material-icons">
+                feed
+                </span>
+              <p>REGISTER</p>
+            </a>
+            <a class="d-flex" href="#">
+             <span class="material-icons">
+               person
+               </span>
+              <p>LOGIN</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="frame d-flex justify-content-between align-items-center border border-primary border-3 px-8 py-7">
+        <p class="fs-1">EVENT</p>
+        <p class="noto-tc-serif fs-4">所有活動</p>
+      </div>
+      <div class="tag row wrap">
+        <a href="#">演出</a>
+        <a href="#">音樂</a>
+        <a href="#">舞蹈</a>
+        <a href="#">戲劇</a>
+        <a href="#">音樂會</a>
+        <a href="#">課程講座</a>
+        <a href="#">社群活動</a>
+        <a href="#">展覽</a>
+        <a href="#">研討會</a>
+        <a href="#">電影</a>
+        <a href="#">電音派對</a>
+        <a href="#">遊戲競賽</a>
+        <a href="#">親子</a>
+        <a href="#">藝文活動</a>
+        <a href="#">運動</a>
+        <a href="#">交通旅遊</a>
+        <a href="#">美食</a>
+        <a href="#">資訊科技</a>
+        <a href="#">聯誼</a>
+        <a href="#">戶外</a>
+        <a href="#">線上活動</a>
+      </div>
+      <div class="events">
+        <div class="card row wrap">
+          <h2>19 MAY 2023</h2>
+          <hr>
+          <img src="" alt="">
+          <h4>邪典電影派對——房間</h4>
+          <p>你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+          <div class="row">
+            <div class="movie">
+              <img src="" alt="" class="icon">
+              <p>電影</p>
+            </div>
+            <div class="sale">
+              <p>開賣中</p>
+              <img src="" alt="" class="icon">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pages"></div>
+      
+    </div>
+    <footer>
+      <p>© 7TAO七逃. All Rights Reserved</p>
+    </footer>
+
+    <!-- <%- include('./layout/footer'); -%> -->
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
