@@ -20,37 +20,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/week6/assets/main-36df1b73.js"></script>
-  <link rel="stylesheet" href="/week6/assets/main-97a091a4.css">
+  <script type="module" crossorigin src="/week6/assets/main-08893667.js"></script>
+  <link rel="stylesheet" href="/week6/assets/main-82f854a9.css">
 </head>
 
 <body>
-  <!-- <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a> -->
-
-  <nav>
+  <nav class="border-bottom border-primary border-3 py-7">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <a class="d-flex align-items-center" href="#">
-          <img class="logo pe-5"
-            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
-            alt="logo">
-          <p class="fs-4">7TAO </p>
-          <p class="fs-8 noto-tc-serif">活動訂票網</p>
-        </a>
+        <div class="d-flex web_nav">
+          <a class="d-flex align-items-center" href="#">
+            <img class="logo pe-5"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+              alt="logo">
+            <p class="logo_text fs-4">7TAO </p>
+            <p class="logo_text fs-8 noto-tc-serif">活動訂票網</p>
+          </a>
+  
+          <form class="d-flex h-55 mx-11">
+            <input class="form-control " type="search" placeholder="探索活動" aria-label="Search">
+            <button class="btn btn-primary" type="submit">
+              <span class="material-icons text-warning align-middle">
+                search
+              </span>
+            </button>
+          </form>
+        </div>
 
-        <form class="d-flex h-55">
-          <input class="form-control " type="search" placeholder="探索活動" aria-label="Search">
-          <button class="btn btn-primary" type="submit">
-            <span class="material-icons text-warning align-middle">
-              search
-            </span>
-          </button>
-        </form>
-
-        <div class="user d-flex">
+        <div class="user">
           <a class="d-flex px-7 text-hover" href="#">
             <span class="material-icons">
               feed
@@ -64,10 +61,37 @@
             <p>LOGIN</p>
           </a>
         </div>
+
+        <div class="hamburger">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="d-flex flex-column justify-content-start">
+              <a class="d-flex px-7 text-hover" href="#">
+                <span class="material-icons">
+                  feed
+                </span>
+                <p>REGISTER</p>
+              </a>
+              <a class="d-flex text-hover" href="#">
+                <span class="material-icons">
+                  person
+                </span>
+                <p>LOGIN</p>
+              </a>
+            </div>
+          </div>
+          <nav class="navbar navbar-light text-primary ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        
       </div>
     </div>
-  </nav>
-  <div class="container">
+  </nav>  <div class="container">
     <div class="frame d-flex justify-content-between align-items-center border border-primary border-3 px-8 py-7 my-8">
       <h1 class="fs-1">EVENT</h1>
       <h3 class="noto-tc-serif fs-4">所有活動</h3>
@@ -413,12 +437,10 @@
     </nav>
 
   </div>
-  <footer class="border-top border-primary broder-3">
-    <p class="noto-tc-sans text-center py-8">© 7TAO七逃. All Rights Reserved</p>
+
+  <footer class="border-top border-primary border-3 py-8">
+    <p class="noto-tc-sans text-center">© 7TAO七逃. All Rights Reserved</p>
   </footer>
-
-  <!-- <footer class="footer">我是 footer</footer> -->
-
   
 </body>
 
