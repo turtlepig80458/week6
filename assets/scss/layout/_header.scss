@@ -1,0 +1,56 @@
+// nav /////////////////////////////////////////////////
+.logo{
+    width: 53px;
+    @include mobile {
+      width: 40px;
+  }
+}
+.logo_text{
+  @include mobile {
+    display: none;
+  }
+}
+// 搜尋框 ////////////////////////////////////////////
+.h-55{
+  height: 55px;
+  @include mobile{
+    height: 39px;
+  }
+}
+
+.form-control{
+padding: 1rem 1.5rem !important;
+border: 2px solid $primary !important;
+background-color: transparent !important;
+}
+
+.user .text-hover{
+  color: $primary;
+}
+.user .text-hover:hover{
+  color:#9C9E18;
+}
+.user{
+  display: flex;
+  @include pad{
+    display: none;
+  }
+}
+
+// hamburger 
+.hamburger .navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: $primary;
+    background-color: transparent;
+    border: 1px solid $primary;
+    border-radius:4px;
+    transition: var(--bs-navbar-toggler-transition);
+}
+.hamburger{
+  display: none;
+  @include pad{
+    display: inline-block;
+  }
+}
