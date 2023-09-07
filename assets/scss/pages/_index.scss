@@ -45,6 +45,29 @@ ul.tag>li>a.text-hover:hover{
   }
 }
 
+
+.hover_line:hover{
+  text-decoration:underline;
+}
+.sale{
+  position: relative;
+}
+.up{
+  z-index: 9;
+}
+.yellow_curcle{
+  position: absolute;
+}
+.yellow_curcle:hover{
+  left: -12px;
+  top: -5pxpx;
+
+  width: 29px;
+  height: 29px;
+  background-color: $warning;
+  border-radius: 100px;
+  display: inline;
+}
 // pages 
 
 .p--11{
@@ -91,10 +114,10 @@ ul.tag>li>a.text-hover:hover{
   color: $warning;
   background-color: $primary;
 }
-.page-item{
-  width: 40px !important;
-  height: 40px !important;
-}
+// .page-item{
+//   width: 40px !important;
+//   height: 40px !important;
+// }
 .page-link{
   padding:0px !important;
   margin: 0;

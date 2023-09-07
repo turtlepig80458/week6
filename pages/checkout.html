@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <!-- icon  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 mx-auto">
+          <nav aria-label="...">
+            <ul class="pagination step d-flex justify-content-between">
+              <li class="page-item active d-flex justify-content-center flex-column align-items-center">
+                <p class="page-link d-flex justify-content-center align-items-center">1</p>
+                <p >訂單確認</p>
+              </li>
+              <li class="page-item d-flex justify-content-center flex-column align-items-center">
+                <p class="page-link d-flex justify-content-center align-items-center">2</p>
+                <p >結帳付款</p>
+              </li>
+              <li class="page-item d-flex justify-content-center flex-column align-items-center">
+                <p class="page-link d-flex justify-content-center align-items-center">3</p>
+                <p >訂購結果</p>
+              </li>
+            </ul>
+          </nav>
+          <!-- <div class="step d-flex just-content-between">
+            <div class="step1">
+              <div class="frame">1</div>
+              <p>訂單確認</p>
+            </div>
+            <div class="step2">
+              <div class="frame">2</div>
+              <p>結帳付款</p>
+            </div>
+            <div class="step3">
+              <div class="frame">3</div>
+              <p>訂購結果</p>
+            </div>
+          </div> -->
+
+          <h1 class="text-center">返老還童-制服聯誼</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-0 py-1">日期</td>
+                <td class="px-0 py-1 text-end">2023/5/12</td>
+              </tr>
+              <tr>
+                <td class="px-0 py-1">票種</td>
+                <td class="px-0 py-1 text-end">改頭換面票（含大改造）</td>
+              </tr>
+              <tr>
+                <td class="px-0 py-1">票價</td>
+                <td class="px-0 py-1 text-end">$8000</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <img src="" alt="">
+          <h2>聯絡人資料</h2>
+          <form action="#">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">聯絡人姓名</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人名稱">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入Email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">手機</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入手機號碼">
+            </div>
+            <button type="submit" class="btn btn-primary col-lg-8 col-sm-12 d-block mx-auto">
+              <div class="button_text d-flex justify-content-center">
+                確認表單資料
+                <span class="material-icons align-middle">
+                  keyboard_double_arrow_right
+                  </span>
+              </div>
+            </button>
+          </form>
+        </div>
+        <a class="mx-auto text-center" href="#">取消購票</a>
+      </div>
+      
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
