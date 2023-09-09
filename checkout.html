@@ -19,8 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/week6/assets/main-97a1e531.js"></script>
-    <link rel="stylesheet" href="/week6/assets/main-f3293d9f.css">
+    <script type="module" crossorigin src="/week6/assets/main-5fe02e47.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-d530efe7.css">
   </head>
   <body>
     <nav class="border-bottom border-primary border-3 py-7">
@@ -35,7 +35,7 @@
             <p class="logo_text fs-8 noto-tc-serif">活動訂票網</p>
           </a>
   
-          <form class="d-flex h-55 mx-11">
+          <form class="d-flex h-55 mx-lg-11 mx-sm-7">
             <input class="form-control " type="search" placeholder="探索活動" aria-label="Search">
             <button class="btn btn-primary" type="submit">
               <span class="material-icons text-warning align-middle">
@@ -90,11 +90,10 @@
       </div>
     </div>
   </nav>    
-    <div class="container">
+    <div class="container step pt-12">
       <div class="row">
-        <div class="col-lg-6 col-sm-12 mx-auto">
-          <nav aria-label="...">
-            <ul class="pagination step d-flex justify-content-between">
+        <div class="col-lg-6 col-sm-12 mx-auto father">
+            <ul class="pagination step d-flex justify-content-between pay-list">
               <li class="page-item active d-flex justify-content-center flex-column align-items-center">
                 <p class="page-link d-flex justify-content-center align-items-center">1</p>
                 <p >訂單確認</p>
@@ -108,24 +107,12 @@
                 <p >訂購結果</p>
               </li>
             </ul>
-          </nav>
-          <!-- <div class="step d-flex just-content-between">
-            <div class="step1">
-              <div class="frame">1</div>
-              <p>訂單確認</p>
-            </div>
-            <div class="step2">
-              <div class="frame">2</div>
-              <p>結帳付款</p>
-            </div>
-            <div class="step3">
-              <div class="frame">3</div>
-              <p>訂購結果</p>
-            </div>
-          </div> -->
-
-          <h1 class="text-center">返老還童-制服聯誼</h1>
-          <table class="table">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 mx-auto detail">
+          <h1 class="text_center_left pt-11">返老還童-制服聯誼</h1>
+          <table class="table pt-8">
             <thead>
               <tr>
                 <th></th>
@@ -147,23 +134,24 @@
               </tr>
             </tbody>
           </table>
-
-          <img src="" alt="">
-          <h2>聯絡人資料</h2>
+          <div class="title_2 pt-11 d-flex justify-content-center flex-column align-items-center">
+            <img class="w-32" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="icon">
+            <h2 class="pt-5 fs-5">聯絡人資料</h2>
+          </div>
           <form action="#">
-            <div class="mb-3">
+            <div class="mb-3 pt-5">
               <label for="exampleFormControlInput1" class="form-label">聯絡人姓名</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入聯絡人名稱">
+              <input type="email" class="form-control h-45" id="exampleFormControlInput1" placeholder="請輸入聯絡人名稱">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 pt-5">
               <label for="exampleFormControlInput1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入Email">
+              <input type="email" class="form-control h-45" id="exampleFormControlInput1" placeholder="請輸入Email">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 pt-5">
               <label for="exampleFormControlInput1" class="form-label">手機</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入手機號碼">
+              <input type="email" class="form-control h-45" id="exampleFormControlInput1" placeholder="請輸入手機號碼">
             </div>
-            <button type="submit" class="btn btn-primary col-lg-8 col-sm-12 d-block mx-auto">
+            <button type="submit" class="btn btn-primary col-lg-8 col-sm-12 d-block mx-auto mt-8">
               <div class="button_text d-flex justify-content-center">
                 確認表單資料
                 <span class="material-icons align-middle">
@@ -173,13 +161,14 @@
             </button>
           </form>
         </div>
-        <a class="mx-auto text-center" href="#">取消購票</a>
+        <a class="mx-auto text-center pt-5 text-secondary" href="#">取消購票</a>
       </div>
       
     </div>
-    <footer class="border-top border-primary border-3 py-8">
+    <footer class="border-top border-primary border-3 py-8 mt-12">
     <p class="noto-tc-sans text-center">© 7TAO七逃. All Rights Reserved</p>
-  </footer>
+  </footer> 
+
     
   </body>
 </html>
