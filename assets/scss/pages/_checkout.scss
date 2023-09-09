@@ -1,14 +1,49 @@
-table{
-  border-collapse:collapse !important;
-}
-.page-link{
+.step .page-link{
   width: 48px;
   height: 48px;
   padding: 4px 11px;
-  border: 1px solid #030303;
+  border: 1px solid $primary;
+  background-color: #F3F1E5;
 
   @media (max-width:768px) {
     width: 32px;
     height: 32px;
   }
+}
+.step .page-link:hover {
+  z-index: 2;
+  color: $warning;
+  background-color: $primary;
+  border-color: $primary;
+}
+.father{
+  position: relative;
+}
+.pay-list::before{
+  width: 83%;
+  height: 1px;
+  content: "";
+  background-color: black;
+  /*位移*/
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: -1;
+}
+// title 
+.text_center_left{
+  text-align: center;
+  @include mobile{
+    text-align: left;
+  }
+}
+.detail table{
+  --bs-table-border-color: $primary;
+}
+.w-32{
+  width: 32px;
+}
+.h-45{
+  height: 45px;
 }
