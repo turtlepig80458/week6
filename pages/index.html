@@ -25,38 +25,58 @@
 <body>
   <%- include('./layout/header'); -%>
   <div class="container">
-    <div class="frame d-flex justify-content-between align-items-center border border-primary border-3 px-8 py-7 my-8">
-      <h1 class="fs-1">EVENT</h1>
-      <h3 class="noto-tc-serif fs-4">所有活動</h3>
+    <div class="banner">
+      <h2 class="fs-1 text-light banner_title">19 MAY 2023</h2>
+      <h4 class="fs-5 text-center text-light noto-tc-serif banner_bodypoint">隔牆有耳-沒有草東的派對</h4>
+      <p class="fs-8 text-center text-light noto-tc-sans banner_text">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
     </div>
-    <!-- <div class="row">
-        <div class="col-12"> -->
-    <ul class="tag d-flex flex-wrap mb-7">
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">演出</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">音樂</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">舞蹈</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">戲劇</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">音樂會</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">課程講座</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">社群活動</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">展覽</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">研討會</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">電影</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">電音派對</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">遊戲競賽</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">親子</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">藝文活動</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">運動</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">交通旅遊</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">美食</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">資訊科技</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">聯誼</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">戶外</a></li>
-      <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">線上活動</a></li>
-    </ul>
-    <!-- </div>
-      </div> -->
-    <!--////////////////// 活動 //////////////////////////// -->
+    <!-- ///////////////////// nav ////////////////////// -->
+    <div class="nav mt-lg-11 mb-lg-7 mt-sm-7 mt-sm-5 d-block">
+      <ul class="m-0 p-0 d-flex flex-wrap justify-content-between w-100">
+        <li class="d-flex flex-column justify-content-center align-items-center w-col4 border border-2 border-primary h-196-112 mb-24-8 py-35-20">
+          <a href="#">
+            <img class="w-80 pb--12" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/cate01.svg?raw=true" alt="">
+            <p class="fs-24-16 text-center noto-tc-serif">演出</p>
+          </a>
+        </li>
+        <li class="d-flex flex-column justify-content-center align-items-center w-col4 border border-2 border-primary h-196-112 mb-24-8 py-35-20">
+          <a href="#">
+            <img class="w-80 pb--12" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/cate02.svg?raw=true" alt="">
+            <p class="fs-24-16 text-center noto-tc-serif">聯誼</p>
+          </a>
+        </li>
+        <li class="d-flex flex-column justify-content-center align-items-center w-col4 border border-2 border-primary h-196-112 mb-24-8 py-35-20">
+          <a href="#">
+            <img class="w-80 pb--12" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/cate03.svg?raw=true" alt="">
+            <p class="fs-24-16 text-center noto-tc-serif">展覽</p>
+          </a>
+        </li>
+        <li class="d-flex flex-column justify-content-center align-items-center w-col4 border border-2 border-primary h-196-112 mb-24-8 py-35-20">
+          <a href="#">
+            <img class="w-80 pb--12" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/cate04.svg?raw=true" alt="">
+            <p class="fs-24-16 text-center noto-tc-serif">美食</p>
+          </a>
+        </li>
+        <li class="d-flex flex-column justify-content-center align-items-center w-col4 border border-2 border-primary h-196-112 mb-24-8 py-35-20">
+          <a href="#">
+            <img class="w-80 pb--12" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/cate05.svg?raw=true" alt="">
+            <p class="fs-24-16 text-center noto-tc-serif">戶外</p>
+          </a>
+        </li>
+        <li class="d-flex flex-column justify-content-center align-items-center w-col4 border border-2 border-primary h-196-112 mb-24-8 py-38-24 bg-primary">
+          <a href="#">
+            <p class="fs-48-24 text-center text-warning noto-tc-serif">探索<br>更多</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /////////////////// title /////////////////// -->
+    <div class="frame d-flex justify-content-between align-items-center border border-primary border-3 px-8 py-7 mb-8">
+      <h1 class="fs-1">RECENT</h1>
+      <h3 class="noto-tc-serif fs-4">近期活動</h3>
+    </div>
+
+    <!-- /////////////////////// event ///////////////////////////// -->
     <div class="row events">
       <!-- 123  -->
       <div class="event col-lg-4 col-sm-12 px-3 pb-11">
@@ -203,178 +223,133 @@
           </a>
         </div>
       </div>
-      <!-- 789  -->
-      <div class="event col-lg-4 col-sm-12 px-3 pb-11">
-        <h2 class="fs-3">19 MAY 2023</h2>
-        <hr class="my-3">
-        <img class="card-img-top max_h_255"
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/07.jpg?raw=true" alt="">
-        <h4 class="card-subtitle fs-5 noto-tc-serif my-3">野營音樂祭</h4>
-        <p class="card-text fs-8 noto-tc-sans mb-5">喜歡山水、喜歡音樂嗎？一起在溪邊來場浪漫的沉浸式森林活動吧！結合四大戶外探索類別、超過 15 項體驗與工作坊、新興音樂人的草地演唱。
-        </p>
-        <div class="d-flex justify-content-between py-3 border-top border-bottom border-primary border-2">
-          <div class="movie d-flex align-items-center">
-            <img class="w-24"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
-              alt="" class="icon">
-            <p class="hover_line">演出</p>
-          </div>
-          <a class="sale d-flex align-items-center card-link" href="#">
-            <p>開賣中</p>
-            <span class="material-icons w-16">
-              keyboard_double_arrow_right
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <div class="event col-lg-4 col-sm-12 px-3 pb-11">
-        <h2 class="fs-3">19 MAY 2023</h2>
-        <hr class="my-3">
-        <img class="card-img-top max_h_255"
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/08.jpg?raw=true" alt="">
-        <h4 class="card-subtitle fs-5 noto-tc-serif my-3">疊疊樂大賽</h4>
-        <p class="card-text fs-8 noto-tc-sans mb-5">來到七星潭會想到什麼呢？絕對是數也數不清的扁扁石頭吧！有這項技能卻沒有機會大展身手的你，展露頭角的機會來囉！</p>
-        <div class="d-flex justify-content-between py-3 border-top border-bottom border-primary border-2">
-          <div class="movie d-flex align-items-center">
-            <img class="w-24"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
-              alt="" class="icon">
-            <p class="hover_line">遊戲競賽</p>
-          </div>
-          <a class="sale d-flex align-items-center card-link" href="#">
-            <p>開賣中</p>
-            <span class="material-icons w-16">
-              keyboard_double_arrow_right
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <div class="event col-lg-4 col-sm-12 px-3 pb-11">
-        <h2 class="fs-3">18 MAY 2023</h2>
-        <hr class="my-3">
-        <img class="card-img-top max_h_255"
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true" alt="">
-        <h4 class="card-subtitle fs-5 noto-tc-serif my-3">返老還童-制服聯誼</h4>
-        <p class="card-text fs-8 noto-tc-sans mb-5">
-          由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！</p>
-        <div class="d-flex justify-content-between py-3 border-top border-bottom border-primary border-2">
-          <div class="movie d-flex align-items-center">
-            <img class="w-24"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
-              alt="" class="icon">
-            <p class="hover_line">聯誼</p>
-          </div>
-          <a class="sale d-flex align-items-center card-link" href="#">
-            <p>檢視活動</p>
-            <span class="material-icons w-16">
-              keyboard_double_arrow_right
-            </span>
-          </a>
-        </div>
-      </div>
-      <!-- 10 11 12  -->
-      <div class="event col-lg-4 col-sm-12 px-3 pb-11">
-        <h2 class="fs-3">19 MAY 2023</h2>
-        <hr class="my-3">
-        <img class="card-img-top max_h_255"
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/10.jpg?raw=true" alt="">
-        <h4 class="card-subtitle fs-5 noto-tc-serif my-3">野外求生17天</h4>
-        <p class="card-text fs-8 noto-tc-sans mb-5">
-          野外求生體驗，我們將在沒有水、沒有電的自然環境裡，學習各項生存技能，課程內容包含生火、水源取得及淨化、射箭、木食器製作、無具野炊、野地編繩和狩獵技能...</p>
-        <div class="d-flex justify-content-between py-3 border-top border-bottom border-primary border-2">
-          <div class="movie d-flex align-items-center">
-            <img class="w-24"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
-              alt="" class="icon">
-            <p class="hover_line">戶外</p>
-          </div>
-          <a class="sale d-flex align-items-center card-link" href="#">
-            <p>開賣中</p>
-            <span class="material-icons w-16">
-              keyboard_double_arrow_right
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <div class="event col-lg-4 col-sm-12 px-3 pb-11">
-        <h2 class="fs-3">19 MAY 2023</h2>
-        <hr class="my-3">
-        <img class="card-img-top max_h_255"
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/11.jpg?raw=true" alt="">
-        <h4 class="card-subtitle fs-5 noto-tc-serif my-3">耳熟能詳音樂祭</h4>
-        <p class="card-text fs-8 noto-tc-sans mb-5">對你來說聽都沒聽過的團，但是音樂一下保證跟著唱，重磅邀請各界隱藏天籟歌手、天團，不想曬太陽也可以在樹下當 KTV
-          跟著唱，唱不出來服務台報到立馬退費！</p>
-        <div class="d-flex justify-content-between py-3 border-top border-bottom border-primary border-2">
-          <div class="movie d-flex align-items-center">
-            <img class="w-24"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
-              alt="" class="icon">
-            <p class="hover_line">演出</p>
-          </div>
-          <a class="sale d-flex align-items-center card-link" href="#">
-            <p>開賣中</p>
-            <span class="material-icons w-16">
-              keyboard_double_arrow_right
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <div class="event col-lg-4 col-sm-12 px-3 pb-11">
-        <h2 class="fs-3">19 MAY 2023</h2>
-        <hr class="my-3">
-        <img class="card-img-top max_h_255"
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/12.jpg?raw=true" alt="">
-        <h4 class="card-subtitle fs-5 noto-tc-serif my-3">野營發呆大賽</h4>
-        <p class="card-text fs-8 noto-tc-sans mb-5">
-          你也是那種動不動就容易放空、神遊的人嗎？這輩子靠這技能出頭的機會來了，在恆春山林一起神遊、盡情地發呆吧！冠軍可以得到價值十萬的綿豆腐床墊一張！</p>
-        <div class="d-flex justify-content-between py-3 border-top border-bottom border-primary border-2">
-          <div class="movie d-flex align-items-center">
-            <img class="w-24"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
-              alt="" class="icon">
-            <p class="hover_line">遊戲競賽</p>
-          </div>
-          <a class="sale d-flex align-items-center card-link" href="#">
-            <p>開賣中</p>
-            <span class="material-icons w-16">
-              keyboard_double_arrow_right
-            </span>
-          </a>
-        </div>
-      </div>
-
     </div>
 
-    <!-- pages  -->
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center mx-auto my-0 pages">
-        <li class="page-item mx-1 border border-1 border-primary">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span class="material-icons fs-7 text-center align-middle">arrow_back</span>
-          </a>
+    <!-- /////////////////// title2  ONLINE /////////////////// -->
+    <div class="frame d-flex justify-content-between align-items-center border border-primary border-3 px-8 py-7 my-8">
+      <h1 class="fs-1">ONLINE</h1>
+      <h3 class="noto-tc-serif fs-4">線上活動</h3>
+    </div>
+
+    <div class="slider d-flex flex-wrap justify-content-between align-items-bottom mb-lg-12 mb-sm-8">
+      <img class="col-lg-7 col-sm-12 h-317-158 pe-lg-7 pe-sm-0 mb-sm-3" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true" alt="">
+      <div class="information col-lg-5 col-sm-12">
+        <h3 class="fs-4 noto-tc-serif pb-5">切特居批踢</h3>
+        <ul class="tag d-flex flex-wrap mb-8">
+          <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">競賽</a></li>
+          <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">科技</a></li>
+          <li><a class="noto-tc-serif border border-1 border-dark p-2-10 box-shadow me-2 mb-2 text-hover d-block" href="#">有趣</a></li>
+        </ul>
+        <p class="noto-tc-sans mb-8">最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
+          這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
+          該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
+        <a class="fs-6 noto-tc-sans bg-primary w-100 text-light d-flex justify-content-center align-items-center h-45-55" href="">查看活動詳情<span class="material-icons align-middle">
+          keyboard_double_arrow_right
+          </span></a>
+      </div>
+    </div>
+    <!-- ///////////////// 跑馬燈QQ //////////////////////// -->
+    <!-- ///////////////////// 拍立得 ////////////////////// -->
+    <div class="container albums">
+      <ul class="row list-unstyled mb-0 flex-column flex-md-row gy-mb-4 gy-5 align-items-center align-items-md-stretch">
+        <li class="col-lg-3 col-md-6 col-10">
+          <div class="card rounded-0 h-100 p-3 pb-5 border-2 border-primary bg-transparent position-relative mb-10">
+            <p class="albums-tag noto-tc-sans bg-white px-3 py-2 text-center position-absolute top-0 start-50">
+              社群活動
+            </p>
+            <img class="pic mb-3" src="https://amanoizumi.github.io/7TAO-web-layout/assets/01-69833549.jpg" alt="albums-picture">
+            <h3 class="title noto-tc-serif">
+              <a href="#" class="text-black stretched-link">
+                無聲派對-閉閉嘴dancing
+              </a>
+            </h3>
+          </div>
         </li>
-        <li class="page-item mx-1 border border-1 border-primary">
-          <a class="page-link text-center align-middle " href="#">1</a></li>
-        <li class="page-item mx-1 border border-1 border-primary active">
-          <a class="page-link text-center align-middle " href="#">2</a></li>
-        <li class="page-item mx-1 border border-1 border-primary">
-          <a class="page-link text-center align-middle " href="#">3</a></li>
-        <li class="page-item mx-1 border border-1 border-primary">
-          <a class="page-link text-center align-middle " href="#">4</a></li>
-        <li class="page-item mx-1 border border-1 border-primary">
-          <a class="page-link text-center align-middle " href="#">5</a></li>
-        <li class="page-item mx-1 border border-1 border-primary">
-          <a class="page-link" href="#" aria-label="Next">
-            <span class="material-icons fs-7 text-center align-middle">arrow_forward</span>
-          </a>
+        <li class="col-lg-3 col-md-6 col-10">
+          <div class="card rounded-0 h-100 p-3 pb-5 border-2 border-primary bg-transparent position-relative -rotate-2 mb-10">
+            <p class="albums-tag noto-tc-sans bg-white px-3 py-2 text-center position-absolute top-0 start-50">
+              藝文活動
+            </p>
+            <img class="pic mb-3" src="https://amanoizumi.github.io/7TAO-web-layout/assets/02-4ea8adb9.jpg" alt="albums-picture">
+            <h3 class="title noto-tc-serif">
+              <a href="#" class="text-black stretched-link">
+                拯救老店大作戰
+              </a>
+            </h3>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 col-10">
+          <div class="card rounded-0 h-100 p-3 pb-5 border-2 border-primary bg-transparent position-relative rotate-2 mb-10">
+            <p class="albums-tag noto-tc-sans bg-white px-3 py-2 text-center position-absolute top-0 start-50">
+              自我覺察
+            </p>
+            <img class="pic mb-3" src="https://amanoizumi.github.io/7TAO-web-layout/assets/03-24acffc0.jpg" alt="albums-picture">
+            <h3 class="title noto-tc-serif">
+              <a href="#" class="text-black stretched-link">
+                內觀修行-部落篇
+              </a>
+            </h3>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 col-10">
+          <div class="card rounded-0 h-100 p-3 pb-5 border-2 border-primary bg-transparent position-relative -rotate-2 mb-10">
+            <p class="albums-tag noto-tc-sans bg-white px-3 py-2 text-center position-absolute top-0 start-50">
+              聯誼活動
+            </p>
+            <img class="pic mb-3" src="https://amanoizumi.github.io/7TAO-web-layout/assets/04-a72b863b.jpg" alt="albums-picture">
+            <h3 class="title noto-tc-serif">
+              <a href="#" class="text-black stretched-link">
+                賞櫻野餐
+              </a>
+            </h3>
+          </div>
         </li>
       </ul>
-    </nav>
+    </div>
+    <!-- ///////////////// 跑馬燈QQ //////////////////////// -->
+    <!-- /////////////////contact//////////////////// -->
+    <div class="boxes d-flex flex-wrap align-items-center justify-content-center">
 
+      <div class="box border border-1 border-primary col-lg-6 col-sm-12 w-50-100">
+        <h3 class="fs-5 border border-1 border-primary py-5 px-lg-8 px-sm-3">#FOLLOW US</h3>
+        <div class="inside border border-1 border-primary p-8">
+  
+          <p class="pb-8">想第一時間獲得新奇有趣的活動資訊？<br>
+            追蹤我們的社群吧！<br>
+            也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
+          <ul>
+            <li class="align-middle pb-5"><div class="bg-dark d-inline-block text-center align-middle wh-32 me-5"><img src="../assets/images/ui-email.svg" alt=""></div>7tao.event@gmail.com</li>
+            <li class="align-middle pb-5"><div class="bg-dark d-inline-block text-center align-middle wh-32 me-5"><img src="../assets/images/phone.svg" alt=""></div>09123123123</li>
+            <li class="align-middle "><div class="bg-dark d-inline-block text-center align-middle wh-32 me-5"><img src="../assets/images/facebook.svg" alt=""></div>7TAO七逃</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="box border border-1 border-primary col-lg-6 col-sm-12 w-50-100">
+        <h3 class="fs-5 border border-1 border-primary py-5 px-lg-8 px-sm-3">#SUBSCRIBE US</h3>
+        <div class="inside border border-1 border-primary d-flex justify-content-between flex-column">
+          <div class="smbox p-8">
+
+            <p class="pb-8">訂閱電子報送折價券！<br>
+              定期精選文章資訊及最新優惠資訊，<br>
+              還不通通給我訂閱起來？</p>
+            <div class="mb-3">
+              <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
+              <input type="email" class="form-control h-55 noto-tc-sans" id="exampleFormControlInput1" placeholder="輸入Email"></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 d-flex align-items-center justify-content-center mt--38">確認訂閱<span class="material-icons align-middle">
+            keyboard_double_arrow_right
+            </span></button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- sentence  -->
+  <div class="frame border-top border-primary border-3 pt-12 mt-12">
+    <h3 class="text-32-18 noto-tc-serif text-center mb-5">此刻打盹，你將做夢；此刻學習，你將圓夢</h3>
+    <p class="text-18-14 noto-tc-serif text-center">——我也不知道誰說的</p>
   </div>
 
   <%- include('./layout/footer'); -%>

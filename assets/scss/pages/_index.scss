@@ -1,112 +1,208 @@
-ul{
-  list-style-type:none;
-  margin: 0;
-  padding: 0;
-  padding-left: 0  ;
-  }
-
-  body .container{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
+*{
+  box-sizing: border-box;
 }
 
-// tags 
-ul.tag>li>a.box-shadow{
-  box-shadow: -4px 0px 0px 0px #000000;
-}
-ul.tag>li>a.box-shadow:hover{
-  box-shadow: -4px 0px 0px 0px $warning;
-  background-color: $primary ;
-}
-ul.tag>li>a.text-hover:hover{
-  color: #fff ;
-}
-.p-2-10{
-  padding: 2.5px 23px;
-}
-// card-event 
-
-.w-24{
-  width: 24px;
-}
-.w-16{
-  width: 16px;
-}
-.event hr {
-  margin: 0 ;
-  color: $primary ;
-  border: 3px solid ;
-  border-top: 0px solid ;
-  opacity: 1 ;
-}
-.max_h_255{
-  max-width: 100%;
-  height: 255px;
+.banner{
+  position: relative;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+  background-size: cover;
   background-position: center center;  
+  width: 100%;
+  height: 518px;
   object-fit: cover;
   @include mobile{
-    height: 210px;
+    height: 350px;
+  }
+}
+.banner_title{
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  @include mobile{
+    top: 16px;
+    left: 40px;
+  }
+}
+.banner_bodypoint{
+  position: absolute;
+  bottom:88px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  @include pad{
+    bottom:24px;
+  }
+}
+.banner_text{
+  width: 100%;
+  position: absolute;
+  bottom:24px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  @include pad{
+    display: none;
   }
 }
 
+// type 
+.fs-24-16{
+  font-size: 24px;
+  @include pad{
+    font-size: 20px;
+  }
+  @include mobile{
+    font-size: 16px;
+  }
+}
+.fs-48-24{
+  font-size: 48px;
+  @include pad{
+    font-size: 32px;
+  }
+  @include mobile{
+    font-size: 24px;
+  }
+}
+.w-80{
+  width: 80px;
+  @include mobile{
+    width: 40px;
+  }
+}
+.pb--12{
+  padding-bottom: 12px;
+}
+.py-35-20{
+  padding: 35px 0;
+  @include mobile{
+    padding: 20px 0;
+  }
+}
+.py-38-24{
+padding: 38px 0px;
+@include mobile{
+  padding: 24px 0;
+}
+}
+.h-196-112{
+  // height: 100%;
+  max-height: 196px;
+  @include mobile{
+    max-height: 112px;
+  }
+}
+.mb-24-8{
+  margin-bottom: 24px;
+  @include mobile{
+    margin-bottom: 8px;
+  }
+}
 
-.hover_line:hover{
-  text-decoration:underline;
-}
-.sale{
-  position: relative;
-}
-.up{
-  z-index: 9;
-}
-.yellow_curcle{
-  position: absolute;
-}
-.yellow_curcle:hover{
-  left: -12px;
-  top: -5pxpx;
+.w-col4{
+  width: calc((100% - 120px)/6);
 
-  width: 29px;
-  height: 29px;
-  background-color: $warning;
-  border-radius: 100px;
-  display: inline;
-}
-// pages 
-
-.pages .pagination{
-  --bs-pagination-padding-x:0  ;
-  --bs-pagination-padding-y:0  ;
+  @include pad{
+    width: calc((50% - 16px)/3);
+  }
   
-  line-height: 1.5  ;
-  --bs-pagination-border-color:$primary  ;
-  --bs-pagination-bg:transparent  ;
-  --bs-pagination-border-width: 0px  ;
-  --bs-pagination-hover-color: $warning  ;
-  --bs-pagination-hover-bg: $primary  ;
-  --bs-pagination-hover-border-color: $primary  ;
-  --bs-pagination-focus-color: $warning  ;
-
-}
-.pages .page-link{
-  background-color: transparent  ;
-  border: $primary  ;
-  width: 40px;
-  height: 40px;
-}
-.pages .page-link:hover {
-  z-index: 2  ;
-  color: $warning  ;
-  background-color: $primary  ;
-  border-color: $primary  ;
+  @include mobile{
+    width: calc((100% - 16px)/3);
+  }
 }
 
-.pages .active{
-  background-color: $primary;
-  color: $warning;
+// ONLINE 
+.h-317-158{
+  max-height: 317px;
+  background-position: center right;  
+  object-fit: cover;
+  width: 100%;
+  @include mobile{
+    max-height: 158px;
+  }
+}
+.h-45-55{
+  height: 45px;
+  @include mobile{
+    height: 55px;
+  }
+}
+
+// 拍立得 
+
+p, h3 {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: #000000;
+  }
+}
+.-rotate-2 {
+  transform: rotate(-2deg) !important;
+}
+.rotate-2 {
+  transform: rotate(2deg) !important;
+}
+.text-black {
+  color: #000000;
+}
+
+.albums {
+  padding-top: 60px;  
+  padding-bottom: 60px;  
+  @include mobile{
+    padding-top: 48px;
+    padding-bottom: 0px;
+  }
+}
+
+.albums-tag {
+  transform: translate(-50%, -50%) rotate(4deg);
+}
+
+.pic {
+  object-fit: cover;
+  height: 291px;
+  @media(min-width:576px) {
+    height: 274px;
+  }
+}
+
+.title {
+  font-size: 18px;
+}
+
+// 框框 
+.wh-32{
+  width: 32px;
+  height: 32px;
+}
+.box ul{
+  padding-left: 0;
+}
+.h-55{
+  height: 55px;
+}
+.mt--38{
+  margin-top: 38px;
+}
+.w-50-100{
+  @include mobile{
+    width: 100%;
+  }
+}
+
+// sentence 
+.text-32-18{
+  font-size: 32px;
+  @include mobile{
+    font-size: 18px;
+  }
+}
+.text-18-14{
+  font-size: 18px;
+  @include mobile{
+    font-size: 14px;
+  }
 }
