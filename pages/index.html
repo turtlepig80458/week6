@@ -20,6 +20,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <!-- Swiper CDN  -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -248,7 +252,19 @@
           </span></a>
       </div>
     </div>
-    <!-- ///////////////// 跑馬燈QQ //////////////////////// -->
+  </div>
+  
+  <!-- ///////////////// 跑馬燈 //////////////////////// -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+    </div>
+  </div>
+  <div class="container">
     <!-- ///////////////////// 拍立得 ////////////////////// -->
     <div class="container albums">
       <ul class="row list-unstyled mb-0 flex-column flex-md-row gy-mb-4 gy-5 align-items-center align-items-md-stretch">
@@ -306,9 +322,20 @@
         </li>
       </ul>
     </div>
-    <!-- ///////////////// 跑馬燈QQ //////////////////////// -->
-    <!-- /////////////////contact//////////////////// -->
-    <div class="boxes d-flex flex-wrap align-items-center justify-content-center">
+  </div>
+  <!-- ///////////////// 跑馬燈 //////////////////////// -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+    </div>
+  </div>
+  <!-- /////////////////contact//////////////////// -->
+  <div class="container">
+    <div class="boxes d-flex flex-wrap align-items-center justify-content-center mt-12">
 
       <div class="box border border-1 border-primary col-lg-6 col-sm-12 w-50-100">
         <h3 class="fs-5 border border-1 border-primary py-5 px-lg-8 px-sm-3">#FOLLOW US</h3>
@@ -355,6 +382,21 @@
   <%- include('./layout/footer'); -%>
 
   <script type="module" src="../main.js"></script>
+
+  <!-- Swiper CDN  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+  allowTouchMove: false,
+  slidesPerView: "auto",
+  speed: 10000,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  }
+});
+  </script>
 </body>
 
 </html>
